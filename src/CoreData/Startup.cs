@@ -49,9 +49,12 @@ namespace CoreData
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            // Singleton is totaly fine for this, useful for HttpContextAccessor
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+            // Pagination helper
             services.AddCloudscribePagination();
+
             services.AddMvc();
 
             // Add application services.
@@ -89,6 +92,12 @@ namespace CoreData
 
             app.UseMvc(routes =>
             {
+                // For areas support
+                routes.MapRoute(
+                    name: "areaRoute",
+                    template: "{area:exists}/{controller=Admin}/{action=Index}");
+
+                // For blog support
                 routes.MapRoute(
                    name: "blogRoute",
                    template: "blogger/{page?}",

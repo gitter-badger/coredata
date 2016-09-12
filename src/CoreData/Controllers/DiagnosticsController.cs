@@ -26,7 +26,7 @@ namespace CoreData.Controllers
             }
 
             // What is the IP address?
-            model.IpAddress = "notyet";
+            model.IpAddress = HttpContext.Connection.RemoteIpAddress.ToString();
 
             return View(model);
         }
