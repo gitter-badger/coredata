@@ -1,0 +1,9 @@
+﻿@model Diagnostics
+@{
+    ViewData["Title"] = "Diagnostics";
+}
+
+<h2>@ViewData["Title"]</h2>
+Client IP: @Model.IpAddress <br />
+Mobile browser: @Model.IsMobileBrowser<br />
+Browser name: @Model.BrowserName<br />

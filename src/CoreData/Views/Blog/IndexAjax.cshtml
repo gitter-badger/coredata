@@ -1,0 +1,28 @@
+﻿@using cloudscribe.Web.Pagination
+@using CoreData.ViewModels
+@using CoreData.Models
+
+@model ArticleListViewModel
+@{
+    ViewBag.Title = "Browse all articles (ajax)";
+}
+<h2>@ViewBag.Title</h2>
+<div id="gridcontainer">
+    @Html.Partial("_ArticleGrid", Model)
+</div>
+
+@section Scripts {
+
+    <environment names="Development">
+        <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+
+        <script src="~/jsdev/cloudscribe-modaldialog-bootstrap.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
+
+        <script src="~/jsdev/cloudscribe-modaldialog-bootstrap.js"></script>
+    </environment>
+
+
+}

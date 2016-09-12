@@ -1,0 +1,50 @@
+﻿@using cloudscribe.Web.Pagination
+@using CoreData.ViewModels
+@using CoreData.Models
+
+@model ArticleListViewModel
+@{
+    ViewBag.Title = "Browse products by category";
+}
+<h2>@ViewBag.Title</h2>
+
+<form class="form-inline" role="form" asp-controller="Blog" asp-action="ViewByCategory" method="get" asp-antiforgery="false">
+
+    Select a category:
+    @Html.DropDownList("categoryName", null, new { @class = "form-control" })
+    <button type="submit" class="btn btn-default">Browse</button>
+</form>
+
+
+@if (Model.Articles.Count > 0)
+{
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Article name</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var article in Model.Articles)
+                {
+                <tr>
+                    <td>@article.Name</td>
+                    <td>@article.Category</td>
+                </tr>}
+        </tbody>
+    </table>
+        <div>
+            <cs-pager cs-paging-pagesize="@Model.Paging.ItemsPerPage"
+                      cs-paging-pagenumber="@Model.Paging.CurrentPage"
+                      cs-paging-totalitems="@Model.Paging.TotalItems"
+                      cs-pagenumber-param="page"
+                      asp-controller="Blog"
+                      asp-action="ViewByCategory"
+                      asp-route-categoryname="@ViewBag.CategoryDisplayName"
+                      asp-route-pagesize="@Model.Paging.ItemsPerPage"></cs-pager>
+
+        </div>
+
+
+}
