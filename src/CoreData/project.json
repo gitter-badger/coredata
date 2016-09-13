@@ -7,7 +7,10 @@
       "version": "1.0.0",
       "type": "platform"
     },
+
     "cloudscribe.Web.Pagination": "1.0.3-*",
+    "cloudscribe.Web.Navigation": "1.0.2-*",
+
 
     "Microsoft.Extensions.DependencyInjection": "1.0.0",
     "Microsoft.ApplicationInsights.AspNetCore": "1.0.0",

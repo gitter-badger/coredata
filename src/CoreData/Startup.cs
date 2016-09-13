@@ -52,8 +52,9 @@ namespace CoreData
             // Singleton is totaly fine for this, useful for HttpContextAccessor
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-            // Pagination helper
+            // Cloudscripe plugins
             services.AddCloudscribePagination();
+            services.AddCloudscribeNavigation(Configuration.GetSection("NavigationOptions"));
 
             services.AddMvc();
 
