@@ -7,12 +7,16 @@ You can develop and run it in Linux, Mac or PC. To get started, install Visual S
 More:
 For good starting material (and let's be honest, where lot of core external components come from) is available on @joeaudette in project related to cloudscribe. This MVP has gone ahead and done a multi-tennant core asp.net mvc groundwork and it's great reference source for basic starting point.
 
+Near future:
+In the near future, after moving everything accessable to web-api, there is a plan to create alternative Angular.js web ui that would access the wep-api features and could theoretically package with Cordova for mobile phones and tablets enabling native applications with the same backend.
+
+Shootout to:
 https://github.com/aspnet/Docs  
 https://github.com/saaskit/saaskit  
 https://github.com/OpenLiveWriter/OpenLiveWriter  
 https://github.com/joeaudette/cloudscribe  
-https://github.com/JimBobSquarePants/ImageProcessor  
+https://github.com/JimBobSquarePants/ImageProcessor 
+https://docs.asp.net/en/latest/
  
-Near future:
-In the near future, after moving everything accessable to web-api, there is a plan to create alternative Angular.js web ui that would access the wep-api features and could theoretically package with Cordova for mobile phones and tablets enabling native applications with the same backend.
+
 
