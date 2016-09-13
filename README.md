@@ -15,8 +15,8 @@ https://github.com/aspnet/Docs
 https://github.com/saaskit/saaskit  
 https://github.com/OpenLiveWriter/OpenLiveWriter  
 https://github.com/joeaudette/cloudscribe  
-https://github.com/JimBobSquarePants/ImageProcessor 
-https://docs.asp.net/en/latest/
+https://github.com/JimBobSquarePants/ImageProcessor   
+https://docs.asp.net/en/latest/  
  
 
 
