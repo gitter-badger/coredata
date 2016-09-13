@@ -10,7 +10,7 @@ For good starting material (and let's be honest, where lot of core external comp
 Near future:
 In the near future, after moving everything accessable to web-api, there is a plan to create alternative Angular.js web ui that would access the wep-api features and could theoretically package with Cordova for mobile phones and tablets enabling native applications with the same backend.
 
-Shootout to:
+Shootout to:  
 https://github.com/aspnet/Docs  
 https://github.com/saaskit/saaskit  
 https://github.com/OpenLiveWriter/OpenLiveWriter  
