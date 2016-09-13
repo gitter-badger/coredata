@@ -1,4 +1,6 @@
 # CoreData
+
+[![Join the chat at https://gitter.im/coredatachat/Lobby](https://badges.gitter.im/coredatachat/Lobby.svg)](https://gitter.im/coredatachat/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 CoreData is a web software that you can use to create websites and enrich them with different modules. Each website can consist of one or many modules. It has web-api it's extendable. And it's really fast thanks to ASP.NET Core. 
 
 **Getting started**  
